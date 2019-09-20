@@ -1,0 +1,206 @@
+/*////////////////////////////////////
+Small format layout
+////////////////////////////////////*/
+
+@media screen and (max-width: 703px) {
+
+    /*////////////////////////////////////
+    Stationary content
+    ////////////////////////////////////*/
+
+    .header .logo-text {
+        display: none;
+    }
+    .header .logo-mark {
+        padding: 20px;
+    }
+    .header .social {
+        right: 20px;
+    }
+    .header .social li.share {
+        display: none;
+    }
+    .header .social li {
+        margin: 0 0 0 20px;
+    }
+
+    #request {
+        top: auto;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        width: auto;
+        padding: 20px 0;
+        transform: none;
+        font-size: 18px;
+    }
+    #request:before {
+        box-shadow: none;
+    }
+    #request.submit {
+        width: auto;
+    }
+
+    #pagination {
+        top: 64px;
+        right: 22px;
+        transform: none;
+    }
+    #pagination-text {
+        display: none;
+    }
+    #pagination-dots {
+        position: relative;
+        margin: 28px 0 0 -10px;
+    }
+
+    #mouse-indicator {
+        display: none;
+    }
+
+    /*////////////////////////////////////
+    Copy
+    ////////////////////////////////////*/
+
+    .copy-section h1 {
+        font-size: 40px;
+        font-weight: 200;
+        margin: 30px 0;
+    }
+    .copy-section p {
+        font-size: 16px;
+        margin: 20px 0;
+        line-height: 1.7em;
+    }
+    .copy-section span.emdash {
+        padding: 0 0 0 60px;
+    }
+    .copy-section span.emdash span {
+        height: 1px;
+        width: 50px;
+    }
+    .copy-content {
+        left: 0;
+        width: 100%;
+        padding: 20px 60px 0 20px;
+        box-sizing: border-box;
+    }
+
+    /*///////////////////////////////////
+    Form
+    ///////////////////////////////////*/
+
+    #form-section {
+        width: 100%;
+        min-width: 0;
+    }
+    #form-section .input-block {
+        margin: 0 0 25px 0;
+    }
+    #form-section #error-message {
+        margin: 10px 0 0 0;
+    }
+
+    div#quake-info {
+        display: none;
+    }
+}
+
+/*////////////////////////////////////
+Content height no longer tied to vh
+////////////////////////////////////*/
+
+@media screen and (max-height: 667px) and (max-width: 767px) {
+    #scrolling-area {
+        padding: 1px 0;
+    }
+    .copy-section {
+        height: auto;
+        margin: 268px 0;
+    }
+    .copy-section.topic-form {
+        margin-bottom: 134px;
+    }
+    .copy-content {
+        position: static;
+        transform: none;
+    }
+}
+
+/* iPhone 6 (height) */
+
+@media screen and (max-height: 667px) and (max-width: 767px) {
+    .copy-section {
+        margin: 234px 0;
+    }
+    .copy-section.topic-form {
+        margin-bottom: 117px;
+    }
+}
+
+/* iPhone 5 (height) */
+
+@media screen and (max-height: 568px) and (max-width: 767px) {
+    .copy-section {
+        margin: 120px 0;
+    }
+    .mobile .copy-section.topic-quote {
+        margin-bottom: 170px;
+    }
+    .copy-section.topic-form {
+        margin-bottom: 100px;
+    }
+}
+
+/* iPhone 6 (width) */
+
+@media screen and (max-width: 414px) {
+    .copy-section h1 {
+        font-size: 48px;
+        margin: 22px 0;
+    }
+    .copy-section p {
+        margin: 22px 0;
+    }
+}
+
+/* iPhone 5 (width) */
+
+@media screen and (max-width: 413px) {
+    .copy-section h1 {
+        font-size: 40px;
+        margin: 30px 0;
+    }
+    .copy-section p {
+        margin: 20px 0;
+    }
+    .copy-section span.emdash {
+        padding: 0 0 0 50px;
+    }
+    .copy-section span.emdash span {
+        width: 45px;
+    }
+}
+
+/* iPhone 5 (width) */
+
+@media screen and (max-width: 374px) {
+    .copy-section h1 {
+        font-size: 34px;
+        margin: 25px 0;
+    }
+    .copy-section p {
+        font-size: 15px;
+        margin: 20px 0;
+    }
+    .copy-section span.emdash {
+        padding: 0 0 0 42px;
+    }
+    .copy-section span.emdash span {
+        width: 38px;
+    }
+}
+
+.mobile .topic-form {
+    display: none;
+}
